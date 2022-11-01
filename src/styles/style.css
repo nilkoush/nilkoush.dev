@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+	body {
+		@apply min-h-screen scroll-smooth bg-gradient-to-bl from-white to-[#E5E6E4] font-roboto text-slate-900 dark:from-black dark:to-[#0d131f] dark:text-white;
+	}
+	[type='text'],
+	[type='email'],
+	[type='url'],
+	[type='password'],
+	[type='number'],
+	[type='date'],
+	[type='datetime-local'],
+	[type='month'],
+	[type='search'],
+	[type='tel'],
+	[type='time'],
+	[type='week'],
+	[multiple],
+	textarea,
+	select {
+		@apply w-full rounded-md shadow-sm focus:border-primary-500 focus:ring-primary-500;
+	}
+	button {
+		@apply outline-none;
+	}
+}
+
+/* Tippy */
+.dark .enter {
+	background: rgb(29, 32, 44) !important;
+	color: #fff !important;
+	border: none !important;
+}
+.enter {
+	background: rgb(245, 245, 245) !important;
+	border: 1px solid rgb(0, 0, 0, 0.1) !important;
+}
+.dark .tippy-tooltip-content {
+	color: #fff !important;
+}
+.tippy-tooltip-content {
+	color: #000 !important;
+}
+
+/* Toastify */
+:root {
+	--toastify-icon-color-success: rgb(74 222 128) !important;
+}
+.Toastify__toast {
+	@apply border border-gray-800/50 text-slate-900 !important;
+}
+.Toastify__toast {
+	@apply bg-white/75 !important;
+}
+.Toastify__toast {
+	@apply dark:bg-white/5 !important;
+}
+.Toastify__toast {
+	@apply dark:text-white !important;
+}
+.Toastify__progress-bar--success {
+	@apply bg-green-400 !important;
+}
+
+/* NProgress */
+#nprogress .bar {
+	@apply bg-primary-500 !important;
+}
+#nprogress .bar {
+	@apply dark:bg-primary-400 !important;
+}

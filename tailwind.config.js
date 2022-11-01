@@ -7,6 +7,7 @@ module.exports = {
 		'./src/pages/**/*.{js,ts,jsx,tsx}',
 		'./src/components/**/*.{js,ts,jsx,tsx}',
 	],
+	darkMode: 'class',
 	theme: {
 		container: {
 			center: true,
@@ -20,13 +21,20 @@ module.exports = {
 			},
 		},
 		extend: {
+			animation: {
+				'spin-slow': 'spin 2s linear infinite',
+			},
 			fontFamily: {
 				roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
-				gray: colors.neutral,
+				gray: colors.slate,
+				primary: colors.sky,
 			},
 		},
 	},
-	plugins: [require('@tailwindcss/forms')],
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/forms'),
+	],
 };
