@@ -1,8 +1,8 @@
 import Menu from '@components/menu';
-import NavbarIcon from '@components/navabr/NavbarIcon';
-import NavbarLink from '@components/navabr/NavbarLink';
-import NavbarMenu from '@components/navabr/NavbarMenu';
-import NavbarTheme from '@components/navabr/NavbarTheme';
+import NavbarIcon from '@components/navbar/NavbarIcon';
+import NavbarLink from '@components/navbar/NavbarLink';
+import NavbarMenu from '@components/navbar/NavbarMenu';
+import NavbarTheme from '@components/navbar/NavbarTheme';
 import { AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { FC, useState } from 'react';

@@ -1,6 +1,6 @@
 import Footer from '@components/footer';
 import Layout from '@components/layout';
-import Navbar from '@components/navabr/Navbar';
+import Navbar from '@components/navbar/Navbar';
 import Section from '@components/section/Section';
 import TechItem from '@components/tech-item';
 import { NextPageWithLayout } from '@pages/page';

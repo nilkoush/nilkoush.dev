@@ -1,6 +1,6 @@
 import Footer from '@components/footer';
 import Layout from '@components/layout';
-import Navbar from '@components/navabr/Navbar';
+import Navbar from '@components/navbar/Navbar';
 import ProjectBox from '@components/project-box';
 import Section from '@components/section';
 import projects from '@data/projects.json';

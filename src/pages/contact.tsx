@@ -2,7 +2,7 @@ import ContactBox from '@components/contact-box';
 import ContactForm from '@components/contact-form';
 import Footer from '@components/footer';
 import Layout from '@components/layout';
-import Navbar from '@components/navabr/Navbar';
+import Navbar from '@components/navbar/Navbar';
 import Section from '@components/section';
 import { NextPageWithLayout } from '@pages/page';
 import { motion } from 'framer-motion';
