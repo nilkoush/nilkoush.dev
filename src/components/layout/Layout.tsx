@@ -31,6 +31,8 @@ const Layout: FC<LayoutProps> = ({ children, title, description, url }) => {
 					property="twitter:image"
 					content="https://www.nilkoush.dev/banner.png"
 				/>
+				<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+				<link rel="icon" type="image/png" href="/favicon.png" />
 			</Head>
 			{children}
 		</>
