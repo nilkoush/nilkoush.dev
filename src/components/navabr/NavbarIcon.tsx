@@ -10,18 +10,19 @@ interface NavbarIconProps {
 const NavbarIcon: FC<NavbarIconProps> = ({ icon, title, href }) => {
 	return (
 		<>
-			<Tooltip title={title} position={'top'} duration={250}>
-				<li>
+			<li>
+				<Tooltip title={title} position={'top'} duration={250}>
 					<a
 						className="block p-2"
 						href={href}
 						target="_blank"
 						rel="noreferrer"
+						aria-label={`Link for ${title}`}
 					>
 						{icon}
 					</a>
-				</li>
-			</Tooltip>
+				</Tooltip>
+			</li>
 		</>
 	);
 };

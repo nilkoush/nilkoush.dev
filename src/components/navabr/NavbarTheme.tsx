@@ -39,6 +39,7 @@ const NavbarTheme: FC<NavbarThemeProps> = () => {
 				<button
 					className="cursor-pointer rounded-md bg-transparent p-2 hover:bg-black/5 dark:hover:bg-white/5"
 					onClick={() => changeTheme(theme)}
+					aria-label="Change theme"
 				>
 					{theme === 'light' && <IoSunny className="h-6 w-6" />}
 					{theme === 'dark' && <IoMoon className="h-6 w-6" />}

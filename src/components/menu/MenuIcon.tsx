@@ -2,10 +2,11 @@ import type { FC, ReactElement } from 'react';
 
 interface MenuIconProps {
 	icon: ReactElement;
+	title: string;
 	href: string;
 }
 
-const MenuIcon: FC<MenuIconProps> = ({ icon, href }) => {
+const MenuIcon: FC<MenuIconProps> = ({ icon, title, href }) => {
 	return (
 		<>
 			<li>
@@ -14,6 +15,7 @@ const MenuIcon: FC<MenuIconProps> = ({ icon, href }) => {
 					href={href}
 					target="_blank"
 					rel="noreferrer"
+					aria-label={`Link for ${title}`}
 				>
 					{icon}
 				</a>

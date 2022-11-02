@@ -51,7 +51,11 @@ export default ContactPage;
 
 ContactPage.getLayout = (page) => {
 	return (
-		<Layout title="Contact | Nikolas Štanga">
+		<Layout
+			title="Contact | Nikolas Štanga"
+			description="Contact me through contact form or other available methods."
+			url="https://www.nilkoush.dev/contact/"
+		>
 			<Navbar />
 			{page}
 			<Footer />

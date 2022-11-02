@@ -40,7 +40,7 @@ const HomePage: NextPageWithLayout = () => {
 						I&apos;m a <strong>self-taught</strong> young{' '}
 						<strong>freelance</strong> website / webapp{' '}
 						<strong>designer</strong> and also{' '}
-						<strong>developer</strong> from Czech republic,
+						<strong>developer</strong> from Czech republic.
 						I&apos;ve been doing stuff around web for nearly{' '}
 						<strong>3 years</strong> now.
 					</p>
@@ -117,7 +117,11 @@ export default HomePage;
 
 HomePage.getLayout = (page) => {
 	return (
-		<Layout title="Nikolas Štanga">
+		<Layout
+			title="Nikolas Štanga"
+			description="I'm a self-taught young freelance website / webapp designer and also developer from Czech Republic. I've been doing stuff around web for nearly 3 years now."
+			url="https://www.nilkoush.dev/"
+		>
 			<Navbar />
 			{page}
 			<Footer />

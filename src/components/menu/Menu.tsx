@@ -39,18 +39,22 @@ const Menu: FC<MenuProps> = ({ closeMenu }) => {
 				<ul className="flex justify-center">
 					<MenuIcon
 						icon={<SiInstagram className="h-6 w-6" />}
+						title="Instagram"
 						href="https://www.instagram.com/nilkoush"
 					/>
 					<MenuIcon
 						icon={<SiDribbble className="h-6 w-6" />}
+						title="Dribbble"
 						href="https://www.dribbble.com/nilkoush"
 					/>
 					<MenuIcon
 						icon={<SiGithub className="h-6 w-6" />}
+						title="GitHub"
 						href="https://www.github.com/nilkoush"
 					/>
 					<MenuIcon
 						icon={<SiTwitter className="h-6 w-6" />}
+						title="Twitter"
 						href="https://www.twitter.com/nilkoush"
 					/>
 				</ul>

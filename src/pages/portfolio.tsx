@@ -44,7 +44,11 @@ export default PortfolioPage;
 
 PortfolioPage.getLayout = (page) => {
 	return (
-		<Layout title="Portfolio | Nikolas Štanga">
+		<Layout
+			title="Portfolio | Nikolas Štanga"
+			description="Look at my projects what I've done in my career or my designs / concepts on dribble."
+			url="https://www.nilkoush.dev/portfolio/"
+		>
 			<Navbar />
 			{page}
 			<Footer />

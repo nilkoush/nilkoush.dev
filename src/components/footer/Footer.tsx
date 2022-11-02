@@ -20,6 +20,7 @@ const Footer: FC<FooterProps> = () => {
 							href="https://www.instagram.com/nilkoush"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Link for Instagram"
 						>
 							<SiInstagram className="h-5 w-5 fill-black/50 dark:fill-white/50" />
 						</a>
@@ -30,6 +31,7 @@ const Footer: FC<FooterProps> = () => {
 							href="https://www.dribbble.com/nilkoush"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Link for Dribbble"
 						>
 							<SiDribbble className="h-5 w-5 fill-black/50 dark:fill-white/50" />
 						</a>
@@ -40,6 +42,7 @@ const Footer: FC<FooterProps> = () => {
 							href="https://www.github.com/nilkoush"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Link for GitHub"
 						>
 							<SiGithub className="h-5 w-5 fill-black/50 dark:fill-white/50" />
 						</a>
@@ -50,6 +53,7 @@ const Footer: FC<FooterProps> = () => {
 							href="https://www.twitter.com/nilkoush"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Link for Twitter"
 						>
 							<SiTwitter className="h-5 w-5 fill-black/50 dark:fill-white/50" />
 						</a>
