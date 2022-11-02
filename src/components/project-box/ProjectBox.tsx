@@ -30,7 +30,7 @@ const ProjectBox: FC<ProjectBoxProps> = ({ project }) => {
 						{project.description}
 					</p>
 				</main>
-				<footer className="flex flex-col justify-between gap-4 p-4 text-sm text-gray-700 dark:text-gray-300 lg:flex-row">
+				<footer className="flex flex-col justify-between gap-4 p-4 text-sm text-gray-700 dark:text-gray-300 sm:flex-row md:flex-col lg:flex-row">
 					<a
 						className="flex items-center gap-2"
 						href={`https://${project.link}`}
