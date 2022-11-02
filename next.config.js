@@ -29,6 +29,11 @@ const nextConfig = {
 				destination: 'https://www.twitter.com/nilkoush',
 				permanent: true,
 			},
+			{
+				source: '/discord',
+				destination: 'https://discord.gg/gwjThFDq',
+				permanent: true,
+			},
 		];
 	},
 };

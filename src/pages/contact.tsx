@@ -20,15 +20,15 @@ const ContactPage: NextPageWithLayout = () => {
 				transition={{ ease: 'easeOut', duration: 0.15 }}
 			>
 				<Section title="I'm here for you 💬" subtitle="Contact">
-					<div className="flex flex-col items-center justify-center">
-						<div className="flex gap-4">
+					<div className="flex w-full flex-col items-center justify-center md:w-auto">
+						<div className="flex w-full flex-col md:w-auto md:flex-row md:gap-4">
 							<ContactBox
 								borderColor="hover:border-[#5865F2]/50"
 								icon={
 									<SiDiscord className="h-6 w-6 text-[#5865F2]" />
 								}
-								link="https://discord.com/users/373042216924348436"
-								name="nilkoush#4986"
+								link="https://discord.gg/gwjThFDq"
+								name="nilkoush.dev/discord"
 							/>
 							<ContactBox
 								borderColor="hover:border-gray-400/50"

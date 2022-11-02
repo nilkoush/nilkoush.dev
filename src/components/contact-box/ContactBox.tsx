@@ -14,7 +14,7 @@ const ContactBox: FC<ContactBoxProps> = ({ name, icon, link, borderColor }) => {
 	return (
 		<Link href={link} passHref>
 			<motion.a
-				className={`mb-4 flex cursor-pointer items-center rounded-md border border-gray-800/50 bg-white/50 p-4 shadow-none shadow-white transition-colors duration-150 ${borderColor} hover:shadow-lg dark:bg-white/5`}
+				className={`mb-4 flex cursor-pointer items-center justify-center rounded-md border border-gray-800/50 bg-white/50 p-4 shadow-none shadow-white transition-colors duration-150 ${borderColor} hover:shadow-lg dark:bg-white/5`}
 				whileHover={{ scale: 1.05 }}
 				target="_blank"
 				rel="noreferrer"
