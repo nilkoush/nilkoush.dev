@@ -44,7 +44,7 @@ const HomePage: NextPageWithLayout = () => {
 						I&apos;ve been doing stuff around web for nearly{' '}
 						<strong>3 years</strong> now.
 					</p>
-					<h3 className="text-2xl font-bold">What do I do? 💭</h3>
+					<h3 className="text-2xl font-bold">What I do? 💭</h3>
 					<p className="prose dark:prose-invert">
 						From web designing in{' '}
 						<a
