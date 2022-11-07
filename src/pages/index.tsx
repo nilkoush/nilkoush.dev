@@ -38,7 +38,7 @@ const HomePage: NextPageWithLayout = () => {
 				>
 					<p className="prose dark:prose-invert">
 						I&apos;m a <strong>self-taught</strong> young{' '}
-						<strong>freelance</strong> website / webapp{' '}
+						<strong>freelance</strong> web / app{' '}
 						<strong>designer</strong> and also{' '}
 						<strong>developer</strong> from Czech republic.
 						I&apos;ve been doing stuff around web for nearly{' '}
