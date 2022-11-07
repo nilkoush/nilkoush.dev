@@ -11,7 +11,7 @@ const Footer: FC<FooterProps> = () => {
 					Nikolas Štanga
 				</h2>
 				<p className="text-base text-black/60 dark:text-white/30">
-					web / app designer & developer
+					web / app designer and developer
 				</p>
 				<ul className="flex">
 					<li>
