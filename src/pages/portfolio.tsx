@@ -46,7 +46,7 @@ PortfolioPage.getLayout = (page) => {
 	return (
 		<Layout
 			title="Portfolio | Nikolas Štanga"
-			description="Look at my projects what I've done in my career or my designs / concepts on dribble."
+			description="Look at my projects what I've done in my career or my designs / concepts on dribbble."
 			url="https://www.nilkoush.dev/portfolio/"
 		>
 			<Navbar />

@@ -119,7 +119,7 @@ HomePage.getLayout = (page) => {
 	return (
 		<Layout
 			title="Nikolas Štanga"
-			description="I'm a self-taught young freelance website / webapp designer and also developer from Czech Republic. I've been doing stuff around web for nearly 3 years now."
+			description="I'm a self-taught young freelance web / app designer and also developer from Czech Republic. I've been doing stuff around web for nearly 3 years now."
 			url="https://www.nilkoush.dev/"
 		>
 			<Navbar />
