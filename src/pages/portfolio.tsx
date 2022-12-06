@@ -31,7 +31,7 @@ const PortfolioPage: NextPageWithLayout = () => {
 					</p>
 					<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 						{projects.map((project) => (
-							<ProjectBox key={project.id} project={project} />
+							<ProjectBox key={project.title} project={project} />
 						))}
 					</div>
 				</Section>
