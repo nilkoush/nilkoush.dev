@@ -15,13 +15,15 @@ const ProjectBox: FC<ProjectBoxProps> = ({ project }) => {
 				whileHover={{ scale: 1.01 }}
 				className="flex flex-col rounded-md border border-gray-800/50 bg-white/50 shadow-none shadow-white transition-colors duration-150 hover:shadow-lg dark:bg-white/5"
 			>
-				<header className="border-b border-zinc-800/50">
+				<header className="border-b border-gray-800/50">
 					<Image
-						className="rounded-t-md border-b border-black"
+						className="block rounded-t-md border-b border-gray-800/50"
 						src={project.image}
 						alt={`${project.title}`}
 						width="1920"
 						height="1080"
+						layout="responsive"
+						objectFit="fill"
 					/>
 				</header>
 				<main className="p-4">

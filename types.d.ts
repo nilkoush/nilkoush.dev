@@ -1,7 +1,6 @@
 import common from '../public/locales/en/common.json';
 
 export interface ProjectType {
-	id: number;
 	image: string;
 	title: string;
 	description: string;

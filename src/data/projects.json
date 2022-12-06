@@ -1,6 +1,5 @@
 [
 	{
-		"id": 1,
 		"image": "/monikabenelli.png",
 		"title": "Monika Benelli",
 		"description": "Website with contact and services information of local arranger and wallpaper maker.",
@@ -8,7 +7,6 @@
 		"link": "www.monikabenelli.cz"
 	},
 	{
-		"id": 2,
 		"image": "/snmirade.png",
 		"title": "Š+N MIRADE s. r. o.",
 		"description": "Simple website with contact and services information of Czech carpentry company.",
@@ -16,7 +14,6 @@
 		"link": "www.nabyteksn.cz"
 	},
 	{
-		"id": 3,
 		"image": "/mayoss.png",
 		"title": "Mayoss",
 		"description": "Custom specific Shopify theme for clothing brand based in Czech Republic.",
