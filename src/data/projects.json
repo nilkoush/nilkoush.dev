@@ -1,10 +1,10 @@
 [
 	{
-		"image": "/monikabenelli.png",
-		"title": "Monika Benelli",
-		"description": "Website with contact and services information of local arranger and wallpaper maker.",
-		"build_with": "Figma + NextJS, TailwindCSS",
-		"link": "www.monikabenelli.cz"
+		"image": "/andelskydotyk.png",
+		"title": "Andělský dotyk",
+		"description": "Website with contact and pricing information of local massage therapist.",
+		"build_with": "Figma + Wordpress",
+		"link": "www.andelskydotyk.cz"
 	},
 	{
 		"image": "/snmirade.png",
