@@ -8,6 +8,7 @@ module.exports = {
 		'./src/components/**/*.{js,ts,jsx,tsx}',
 	],
 	darkMode: 'class',
+	safelist: ['bg-TypeScript', 'bg-null'],
 	theme: {
 		container: {
 			center: true,
@@ -30,6 +31,8 @@ module.exports = {
 			colors: {
 				gray: colors.slate,
 				primary: colors.sky,
+				TypeScript: '#007acc',
+				null: '#000000',
 			},
 		},
 	},

@@ -1,11 +1,14 @@
 import common from '../public/locales/en/common.json';
 
-export interface ProjectType {
-	image: string;
-	title: string;
+export interface RepoType {
+	id: number;
+	name: string;
 	description: string;
-	build_with: string;
-	link: string;
+	url: string;
+	homepage: string;
+	stargazers_count: number;
+	forks: number;
+	language: 'TypeScript' | 'Python';
 }
 
 export interface Resources {

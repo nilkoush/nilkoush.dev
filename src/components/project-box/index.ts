@@ -1,3 +1,3 @@
-import ProjectBox from '@components/project-box/ProjectBox';
+import RepoBox from '@components/project-box/RepoBox';
 
-export default ProjectBox;
+export default RepoBox;
