@@ -20,7 +20,7 @@ const RepoBox: FC<RepoBoxProps> = ({ repo }) => {
 				<main className="p-4">
 					<h3 className="font-semibold">{repo.name}</h3>
 					<p className="text-sm text-gray-800/70 dark:text-gray-100/70">
-						{repo.description}
+						{repo.description ? repo.description : 'nothing'}
 					</p>
 				</main>
 				<footer className="flex flex-col gap-4 p-4 text-sm text-gray-700 dark:text-gray-300 sm:flex-row md:flex-col lg:flex-row">
