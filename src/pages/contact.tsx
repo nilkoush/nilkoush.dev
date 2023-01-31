@@ -27,7 +27,7 @@ const ContactPage: NextPageWithLayout = () => {
 								icon={
 									<SiDiscord className="h-6 w-6 text-[#5865F2]" />
 								}
-								link="https://discord.gg/gwjThFDq"
+								link="https://nilkoush.dev/discord"
 								name="nilkoush.dev/discord"
 							/>
 							<ContactBox
