@@ -14,8 +14,9 @@ const RepoBox: FC<RepoBoxProps> = ({ repo }) => {
 			<motion.a
 				className="flex flex-col justify-between rounded-md border border-gray-800/50 bg-white/50 shadow-none shadow-white transition-colors duration-150 hover:shadow-lg dark:bg-white/5"
 				whileHover={{ scale: 1.01 }}
-				href={repo.url}
+				href={repo.svn_url}
 				target="_blank"
+				rel="noreferrer"
 			>
 				<main className="p-4">
 					<h3 className="font-semibold">{repo.name}</h3>

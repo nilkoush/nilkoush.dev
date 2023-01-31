@@ -4,7 +4,7 @@ export interface RepoType {
 	id: number;
 	name: string;
 	description: string;
-	url: string;
+	svn_url: string;
 	homepage: string;
 	stargazers_count: number;
 	forks: number;
