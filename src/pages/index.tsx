@@ -1,10 +1,13 @@
 import Footer from '@components/footer';
 import Layout from '@components/layout';
-import Navbar from '@components/navbar/Navbar';
+import Navbar from '@components/navbar';
 import Section from '@components/section/Section';
 import TechItem from '@components/tech-item';
 import { NextPageWithLayout } from '@pages/page';
 import { motion } from 'framer-motion';
+import { GetServerSideProps } from 'next';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import {
 	SiGit,
 	SiGithub,
@@ -22,7 +25,20 @@ import {
 	SiWordpress,
 } from 'react-icons/si';
 
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+	return {
+		props: {
+			...(await serverSideTranslations(locale as string, [
+				'common',
+				'home',
+			])),
+		},
+	};
+};
+
 const HomePage: NextPageWithLayout = () => {
+	const { t } = useTranslation(['common', 'home']);
+
 	return (
 		<>
 			<motion.main
@@ -33,64 +49,28 @@ const HomePage: NextPageWithLayout = () => {
 				transition={{ ease: 'easeOut', duration: 0.15 }}
 			>
 				<Section
-					title="Hello there, I'm Nikolas 👋"
-					subtitle="About me"
+					title={t('home:about_me.title')}
+					subtitle={t('common:pages.about_me')}
 				>
-					<p className="prose dark:prose-invert">
-						I&apos;m a <strong>self-taught</strong> young{' '}
-						<strong>freelance</strong> web / app{' '}
-						<strong>designer</strong> and also{' '}
-						<strong>developer</strong> from Czech republic.
-						I&apos;ve been doing stuff around web for nearly{' '}
-						<strong>3 years</strong> now.
-					</p>
-					<h3 className="text-2xl font-bold">What I do? 💭</h3>
-					<p className="prose dark:prose-invert">
-						From web designing in{' '}
-						<a
-							href="https://www.figma.com"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Figma
-						</a>
-						, because I have passion in UI & UX design, through
-						reworking the design into custom{' '}
-						<a
-							href="https://www.wordpress.org"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Wordpress
-						</a>{' '}
-						design to working around with{' '}
-						<a
-							href="https://www.shopify.com"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Shopify
-						</a>{' '}
-						and it&apos;s themes. I also really love{' '}
-						<a
-							href="https://www.reactjs.org"
-							target="_blank"
-							rel="noreferrer"
-						>
-							React
-						</a>
-						, which this entire website is written in, and it&apos;s
-						whole ecosystem (
-						<a
-							href="https://www.nextjs.org"
-							target="_blank"
-							rel="noreferrer"
-						>
-							NextJS
-						</a>
-						, etc.). You can see below, what I&apos;ve tried and
-						liked or what I&apos;m working with.
-					</p>
+					<p
+						className="prose dark:prose-invert"
+						dangerouslySetInnerHTML={{
+							__html: t('home:about_me.body', {
+								interpolation: { escapeValue: false },
+							}),
+						}}
+					/>
+					<h3 className="text-2xl font-bold">
+						{t('home:what_i_do.title')}
+					</h3>
+					<p
+						className="prose dark:prose-invert"
+						dangerouslySetInnerHTML={{
+							__html: t('home:what_i_do.body', {
+								interpolation: { escapeValue: false },
+							}),
+						}}
+					/>
 					<ul className="mb-12 flex flex-wrap items-center justify-center rounded-md border border-gray-800 bg-white/10 p-1 dark:bg-black/10">
 						<TechItem icon={SiTypescript} name="TypeScript" />
 						<TechItem icon={SiVisualstudiocode} name="VSCode" />
@@ -113,8 +93,6 @@ const HomePage: NextPageWithLayout = () => {
 	);
 };
 
-export default HomePage;
-
 HomePage.getLayout = (page) => {
 	return (
 		<Layout
@@ -128,3 +106,5 @@ HomePage.getLayout = (page) => {
 		</Layout>
 	);
 };
+
+export default HomePage;

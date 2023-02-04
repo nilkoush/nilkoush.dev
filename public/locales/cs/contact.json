@@ -1,0 +1,15 @@
+{
+	"contact": {
+		"title": "Jsem tu pro Vás 💬"
+	},
+	"contact_form": {
+		"labels": {
+			"email_address": "E-mailová adresa",
+			"message": "Zpráva"
+		},
+		"errors": {
+			"email_address": "E-mailová adresa",
+			"message": "Zpráva"
+		}
+	}
+}

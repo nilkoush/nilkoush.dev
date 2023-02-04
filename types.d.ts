@@ -1,5 +1,3 @@
-import common from '../public/locales/en/common.json';
-
 export interface RepoType {
 	id: number;
 	name: string;
@@ -9,8 +7,4 @@ export interface RepoType {
 	stargazers_count: number;
 	forks: number;
 	language: 'TypeScript' | 'Python';
-}
-
-export interface Resources {
-	common: typeof common;
 }

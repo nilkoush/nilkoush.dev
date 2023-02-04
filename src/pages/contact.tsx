@@ -6,10 +6,26 @@ import Navbar from '@components/navbar/Navbar';
 import Section from '@components/section';
 import { NextPageWithLayout } from '@pages/page';
 import { motion } from 'framer-motion';
+import { GetServerSideProps } from 'next';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { FiMail } from 'react-icons/fi';
 import { SiDiscord } from 'react-icons/si';
 
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+	return {
+		props: {
+			...(await serverSideTranslations(locale as string, [
+				'common',
+				'contact',
+			])),
+		},
+	};
+};
+
 const ContactPage: NextPageWithLayout = () => {
+	const { t } = useTranslation(['common', 'contact']);
+
 	return (
 		<>
 			<motion.main
@@ -19,7 +35,10 @@ const ContactPage: NextPageWithLayout = () => {
 				exit={{ opacity: 0, scale: 0.95 }}
 				transition={{ ease: 'easeOut', duration: 0.15 }}
 			>
-				<Section title="I'm here for you 💬" subtitle="Contact">
+				<Section
+					title={t('contact:contact.title')}
+					subtitle={t('common:pages.contact')}
+				>
 					<div className="flex w-full flex-col items-center justify-center md:w-auto">
 						<div className="flex w-full flex-col md:w-auto md:flex-row md:gap-4">
 							<ContactBox

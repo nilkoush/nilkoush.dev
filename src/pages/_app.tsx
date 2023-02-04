@@ -1,4 +1,5 @@
 import '@styles/style.css';
+import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import { Router } from 'next/router';
 import NProgress from 'nprogress';
@@ -61,4 +62,4 @@ function MyApp({ Component, pageProps, router }: AppPropsWithLayout) {
 	);
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

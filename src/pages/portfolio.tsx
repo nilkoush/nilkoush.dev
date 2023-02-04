@@ -6,8 +6,11 @@ import Section from '@components/section';
 import { NextPageWithLayout } from '@pages/page';
 import { RepoType } from '@types';
 import { motion } from 'framer-motion';
+import { GetServerSideProps } from 'next';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-export async function getServerSideProps() {
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
 	const repos = await fetch(
 		`https://api.github.com/users/nilkoush/repos?type=owner&per_page=100`
 	).then((res) => res.json());
@@ -20,15 +23,23 @@ export async function getServerSideProps() {
 		.slice(0, 6);
 
 	return {
-		props: { repos: topRepos },
+		props: {
+			repos: topRepos,
+			...(await serverSideTranslations(locale as string, [
+				'common',
+				'portfolio',
+			])),
+		},
 	};
-}
+};
 
 interface PortfolioPageProps {
 	repos: RepoType[];
 }
 
 const PortfolioPage: NextPageWithLayout<PortfolioPageProps> = ({ repos }) => {
+	const { t } = useTranslation(['common', 'portfolio']);
+
 	return (
 		<>
 			<motion.main
@@ -39,8 +50,8 @@ const PortfolioPage: NextPageWithLayout<PortfolioPageProps> = ({ repos }) => {
 				transition={{ ease: 'easeOut', duration: 0.15 }}
 			>
 				<Section
-					title="Checkout my GitHub projects ✨"
-					subtitle="Portfolio"
+					title={t('portfolio:github_projects.title')}
+					subtitle={t('common:pages.portfolio')}
 				>
 					<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 						{repos.map((repo) => (
