@@ -53,7 +53,7 @@ const PortfolioPage: NextPageWithLayout<PortfolioPageProps> = ({ repos }) => {
 					title={t('portfolio:github_projects.title')}
 					subtitle={t('common:pages.portfolio')}
 				>
-					<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+					<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 						{repos.map((repo) => (
 							<RepoBox key={repo.id} repo={repo} />
 						))}
