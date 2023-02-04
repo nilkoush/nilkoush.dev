@@ -80,7 +80,7 @@ const Navbar: FC<NavbarProps> = () => {
 						</div>
 					</nav>
 				</header>
-				<AnimatePresence exitBeforeEnter>
+				<AnimatePresence mode="wait">
 					{menu && <Menu closeMenu={closeMenu} />}
 				</AnimatePresence>
 			</div>
