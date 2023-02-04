@@ -1,7 +1,7 @@
 import Footer from '@components/footer';
 import Layout from '@components/layout';
 import Navbar from '@components/navbar/Navbar';
-import RepoBox from '@components/project-box';
+import RepoBox from '@components/repo-box';
 import Section from '@components/section';
 import { NextPageWithLayout } from '@pages/page';
 import { RepoType } from '@types';
