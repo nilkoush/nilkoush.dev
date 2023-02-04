@@ -20,6 +20,7 @@ const Menu: FC<MenuProps> = ({ closeMenu }) => {
 				exit={{ opacity: 0 }}
 				transition={{ duration: 0.1, ease: 'easeInOut' }}
 				className="fixed z-10 block h-screen w-full overflow-hidden bg-black/10 backdrop-blur-md lg:hidden"
+				onClick={closeMenu}
 			></motion.div>
 			<motion.nav
 				initial={{ opacity: 0 }}
