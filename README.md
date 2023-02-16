@@ -7,8 +7,7 @@
 - Uses [i18next](https://www.i18next.com/), to easily change whole website language
 
 ### Redirects
-- https://nilkoush.dev/instagram
-- https://nilkoush.dev/dribbble
 - https://nilkoush.dev/github
 - https://nilkoush.dev/twitter
+- https://nilkoush.dev/linkedin
 - https://nilkoush.dev/discord
