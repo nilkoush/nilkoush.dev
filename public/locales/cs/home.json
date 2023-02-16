@@ -1,10 +1,10 @@
 {
-	"about_me": {
-		"title": "Ahoj, já jsem Nikolas 👋",
-		"body": "Jsem mladý <strong>samouk</strong>, věnující se web / app <strong>designu</strong> a také <strong>vývoji</strong> na <strong>volné noze</strong> z České republiky. Webům se věnuji už něco okolo <strong>3 let</strong>."
-	},
-	"what_i_do": {
-		"title": "Co vlastně dělám? 💭",
-		"body": "Kvůli mé vášni k UI & UX designu, pracuji na designech ve <a href='https://www.figma.com' target='_blank' rel='noreferrer'>Figmě</a>. Čas od času přepracuji určitý design do <a href='https://www.wordpress.org' target='_blank' rel='noreferrer'>Wordpressu</a>. Také mám zkušenosti se <a href='https://www.shopify.com' target='_blank' rel='noreferrer'>Shopify</a> a programováním vlastních šablon. Od mého začátku programování webů jsem se zamiloval do <a href='https://www.reactjs.org' target='_blank' rel='noreferrer'>Reactu</a>, ve kterém je tento web napsaný, a všech věcí okolo (<a href='https://www.nextjs.org' target='_blank' rel='noreferrer'>NextJS</a>, apod.). Dole můžete vidět technologie, které se mi líbí, či které jsem vyzkoušel."
-	}
+    "about_me": {
+        "title": "Ahoj, já jsem Nikolas 👋",
+        "body": "Jsem mladý <strong>samouk</strong> věnující se software engineeringu z České republiky. Momentálně se okolo toho pohybuji už skoro <strong>3 roky</strong>."
+    },
+    "what_i_do": {
+        "title": "Co vlastně dělám? 💭",
+        "body": "Kvůli mé vášni k UI & UX designu, pracuji na designech ve <a href='https://www.figma.com' target='_blank' rel='noreferrer'>Figmě</a>. Čas od času přepracuji určitý design do <a href='https://www.wordpress.org' target='_blank' rel='noreferrer'>Wordpressu</a>. Také mám zkušenosti se <a href='https://www.shopify.com' target='_blank' rel='noreferrer'>Shopify</a> a programováním vlastních šablon. Od mého začátku programování webů jsem se zamiloval do <a href='https://www.reactjs.org' target='_blank' rel='noreferrer'>Reactu</a>, ve kterém je tento web napsaný, a všech věcí okolo (<a href='https://www.nextjs.org' target='_blank' rel='noreferrer'>NextJS</a>, apod.). Dole můžete vidět technologie, které se mi líbí, či které jsem vyzkoušel."
+    }
 }

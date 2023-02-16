@@ -1,10 +1,10 @@
 {
-	"about_me": {
-		"title": "Hello there, I'm Nikolas 👋",
-		"body": "I'm a <strong>self-taught</strong> young <strong>freelance</strong> web / app <strong>designer</strong> and also <strong>developer</strong> from Czech Republic. I've been doing stuff around web for nearly <strong>3 years</strong> now."
-	},
-	"what_i_do": {
-		"title": "What I do? 💭",
-		"body": "From web designing in <a href='https://www.figma.com' target='_blank' rel='noreferrer'>Figma</a>, because I have passion in UI & UX design, through reworking the design into custom <a href='https://www.wordpress.org' target='_blank' rel='noreferrer'>Wordpress</a> design to working around with <a href='https://www.shopify.com' target='_blank' rel='noreferrer'>Shopify</a> and it's themes. I also really love <a href='https://www.reactjs.org' target='_blank' rel='noreferrer'>React</a>, which this entire website is written in, and it's whole ecosystem (<a href='https://www.nextjs.org' target='_blank' rel='noreferrer'>NextJS</a>, etc.). You can see below, what I've tried and liked or what I'm working with."
-	}
+    "about_me": {
+        "title": "Hello there, I'm Nikolas 👋",
+        "body": "I'm a <strong>self-taught</strong> young software engineer from Czech Republic. I've been doing stuff around it for nearly <strong>3 years</strong> now."
+    },
+    "what_i_do": {
+        "title": "What I do? 💭",
+        "body": "From web designing in <a href='https://www.figma.com' target='_blank' rel='noreferrer'>Figma</a>, because I have passion in UI & UX design, through reworking the design into custom <a href='https://www.wordpress.org' target='_blank' rel='noreferrer'>Wordpress</a> design to working around with <a href='https://www.shopify.com' target='_blank' rel='noreferrer'>Shopify</a> and it's themes. I also really love <a href='https://www.reactjs.org' target='_blank' rel='noreferrer'>React</a>, which this entire website is written in, and it's whole ecosystem (<a href='https://www.nextjs.org' target='_blank' rel='noreferrer'>NextJS</a>, etc.). You can see below, what I've tried and liked or what I'm working with."
+    }
 }
