@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import { SiDribbble, SiGithub, SiInstagram, SiTwitter } from 'react-icons/si';
+import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
 
 interface FooterProps {}
 
@@ -14,28 +14,6 @@ const Footer: FC<FooterProps> = () => {
                     software engineer
                 </p>
                 <ul className="flex">
-                    <li>
-                        <a
-                            className="block p-2"
-                            href="https://www.instagram.com/nilkoush"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="Link for Instagram"
-                        >
-                            <SiInstagram className="h-5 w-5 fill-black/50 dark:fill-white/50" />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="block p-2"
-                            href="https://www.dribbble.com/nilkoush"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="Link for Dribbble"
-                        >
-                            <SiDribbble className="h-5 w-5 fill-black/50 dark:fill-white/50" />
-                        </a>
-                    </li>
                     <li>
                         <a
                             className="block p-2"
@@ -56,6 +34,17 @@ const Footer: FC<FooterProps> = () => {
                             aria-label="Link for Twitter"
                         >
                             <SiTwitter className="h-5 w-5 fill-black/50 dark:fill-white/50" />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="block p-2"
+                            href="https://www.linkedin.com/in/nikolasstanga"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label="Link for LinkedIn"
+                        >
+                            <SiLinkedin className="h-5 w-5 fill-black/50 dark:fill-white/50" />
                         </a>
                     </li>
                 </ul>
