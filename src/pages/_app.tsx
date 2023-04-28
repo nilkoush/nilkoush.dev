@@ -1,4 +1,5 @@
 import '@styles/style.css';
+import { Analytics } from '@vercel/analytics/react';
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import { Router } from 'next/router';
@@ -11,55 +12,56 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import { NextPageWithLayout } from './page';
 
 interface AppPropsWithLayout extends AppProps {
-	Component: NextPageWithLayout;
+    Component: NextPageWithLayout;
 }
 
 NProgress.configure({ showSpinner: false });
 
 function MyApp({ Component, pageProps, router }: AppPropsWithLayout) {
-	const getLayout = Component.getLayout || ((page) => page);
+    const getLayout = Component.getLayout || ((page) => page);
 
-	useEffect(() => {
-		if (typeof window === 'undefined') {
-			return;
-		}
+    useEffect(() => {
+        if (typeof window === 'undefined') {
+            return;
+        }
 
-		void new Audio('/pop.mp3').play().catch(() => null);
-	}, [router.pathname]);
+        void new Audio('/pop.mp3').play().catch(() => null);
+    }, [router.pathname]);
 
-	useEffect(() => {
-		const handleRouteStart = () => NProgress.start();
-		const handleRouteDone = () => NProgress.done();
+    useEffect(() => {
+        const handleRouteStart = () => NProgress.start();
+        const handleRouteDone = () => NProgress.done();
 
-		Router.events.on('routeChangeStart', handleRouteStart);
-		Router.events.on('routeChangeComplete', handleRouteDone);
-		Router.events.on('routeChangeError', handleRouteDone);
+        Router.events.on('routeChangeStart', handleRouteStart);
+        Router.events.on('routeChangeComplete', handleRouteDone);
+        Router.events.on('routeChangeError', handleRouteDone);
 
-		return () => {
-			// Make sure to remove the event handler on unmount!
-			Router.events.off('routeChangeStart', handleRouteStart);
-			Router.events.off('routeChangeComplete', handleRouteDone);
-			Router.events.off('routeChangeError', handleRouteDone);
-		};
-	}, []);
+        return () => {
+            // Make sure to remove the event handler on unmount!
+            Router.events.off('routeChangeStart', handleRouteStart);
+            Router.events.off('routeChangeComplete', handleRouteDone);
+            Router.events.off('routeChangeError', handleRouteDone);
+        };
+    }, []);
 
-	return (
-		<>
-			<ToastContainer
-				position="top-right"
-				autoClose={3000}
-				hideProgressBar={false}
-				newestOnTop
-				closeOnClick
-				rtl={false}
-				pauseOnFocusLoss
-				draggable
-				pauseOnHover
-				theme="light"
-			/>
-			{getLayout(<Component {...pageProps} />)}
-		</>
-	);
+    return (
+        <>
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
+            {getLayout(<Component {...pageProps} />)}
+            <Analytics />
+        </>
+    );
 }
 
 export default appWithTranslation(MyApp);
